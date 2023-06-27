@@ -51,6 +51,6 @@ class CarFactory {
 //creating a child to order those methods as required
 const carCreator = new CarFactory();
 
-carCreator.CreateCar();
-carCreator.CreateLuxoryCar();
-carCreator.CreateSportsCar();
+console.log(carCreator.CreateCar())
+console.log(carCreator.CreateLuxoryCar())
+console.log(carCreator.CreateSportsCar())
