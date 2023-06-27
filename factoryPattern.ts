@@ -1,7 +1,6 @@
 //factory pattern  relies on DRY code principle
 //It implies creating and  parent class  that has required functions/resources to execute the given task
 
-
 // lets create a factory for creating Cars
 class CarFactory {
   CreateCar(): string[] {
@@ -49,9 +48,9 @@ class CarFactory {
   }
 }
 
+//creating a child to order those methods as required
+const carCreator = new CarFactory();
 
-const carCreator= new CarFactory()
-
-carCreator.CreateCar()
-carCreator.CreateLuxoryCar()
-carCreator.CreateSportsCar()
+carCreator.CreateCar();
+carCreator.CreateLuxoryCar();
+carCreator.CreateSportsCar();
