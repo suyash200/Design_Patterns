@@ -2,6 +2,8 @@
 //It implies creating and  parent class  that has required functions/resources to execute the given task
 
 // lets create a factory for creating Cars
+
+// which will create seprate cars as per provided with  function in the carFacrory classs
 class CarFactory {
   CreateCar(): string[] {
     const components = [
@@ -51,6 +53,6 @@ class CarFactory {
 //creating a child to order those methods as required
 const carCreator = new CarFactory();
 
-console.log(carCreator.CreateCar())
-console.log(carCreator.CreateLuxoryCar())
-console.log(carCreator.CreateSportsCar())
+console.log(carCreator.CreateCar());
+console.log(carCreator.CreateLuxoryCar());
+console.log(carCreator.CreateSportsCar());
