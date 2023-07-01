@@ -31,7 +31,7 @@ class Car implements Car {
     this.engine = engine;
   }
   SetWheels(wheels: string): void {
-    this.wheels= wheels;
+    this.wheels = wheels;
   }
 }
 
@@ -65,7 +65,6 @@ sportsCar.addSize("lg");
 sportsCar.addTyres("sportsDrive");
 
 console.log(sportsCar.builder());
-
 
 //output
 // Car {
