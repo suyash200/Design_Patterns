@@ -1,19 +1,21 @@
-interface Singleton {
-  userInfo: object;
+// singleton pattern  refers to an single state in an application
+// define a class that has only one instance and provides a global point of access to it
+// there are two types of initilization for this pattern lazy and early initilization
 
-  getInstance(): object;
-}
+//lets look at lazy initilization
 
-class Singleton implements Singleton {
-  private static instance: Singleton;
+class globalStates {
+  private static Instance: globalStates;
 
-  getInstance(): Singleton {
-    if (!Singleton.instance) {
-      Singleton.instance = new Singleton();
-      return Singleton.instance;
-    } else {
-      return Singleton.instance;
+  constructor() {}
+  //it checks wheather the instance is alloted previously befor getting new data
+  public static getInstacne(): globalStates {
+    if (!globalStates.Instance) {
+      globalStates.Instance = new globalStates();
     }
+    return globalStates;
   }
 }
 
+var firstInstance = globalStates.getInstacne();
+console.log(firstInstance);
